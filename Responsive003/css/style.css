@@ -13,11 +13,10 @@ body{
      box-sizing: border-box; 
 } 
 
-.container{
-   position: relative;
-   width: 700px;
+.app{
    height: 600px;
-   margin: 40px auto 0;
+   width: 700px;
+   margin: 40px auto;
    background-color: rgba(91, 128, 86, 0.5);
    padding: 10px 50px 50px 50px;
    border-radius: 50px;
@@ -31,90 +30,15 @@ body{
   flex-wrap: wrap;
 }
 
-.container  .quiz-box{
-  position: relative;
-  width: calc(350px - 30px);
-  height: calc(300px - 30px); 
-  float: left;
-  margin: 15px;
-  box-sizing: border-box;
-  overflow: hidden;
-  box-shadow: 0 5px 10px rgba(0,0,0,.8)
-}
-.container  .box:before
-{
-   content: ' ';
-   position: absolute;
-   top: 10px;
-   left: 10px;
-   right: 10px;
-   bottom: 10px;
-   border-top: 1px solid #fff;
-   border-top: 1px solid #fff;
-   border-bottom: 1px solid #fff;
-   box-sizing: border-box;
-   transition: 0.5s;
-   transform: scaleX(0);
-   opacity: 0
-
-}
-.container .box:hover:before 
-{
-   transform: scaleX(1);
-   opacity: 1;
-}
-.container  .box:after
-{
-   content: ' ';
-   position: absolute;
-   top: 10px;
-   left: 10px;
-   right: 10px;
-   bottom: 10px;
-   border-top: 1px solid #fff;
-   border-top: 1px solid #fff;
-   border-bottom: 1px solid #fff;
-   box-sizing: border-box;
-   transition: 0.5s;
-   transform: scaleY(0);
-   opacity: 0
-
-}
-.container .box:hover:after 
-{
-   transform: scaleY(1);
-   opacity: 1;
-}
-.container .box 
-imgBox
-{
-   position: relative;
-}
-.container .box .imgBox img
-{
-   width: 100%;
-   transition: 0.5s;
-}
-.container .box:hover .imgBox  img
-{
-   opacity: .2;
-   transform: scale(1.2);
-}
-.container .box .content
-{
-   position: absolute;
-   width: 100%;
+.app .quiz-box{
+  
+  flex-basis: 100%;
+  max-width: 100%;
+  
 }
 
-
-
-
-
-
-
-/*
-.container  .quiz-box h4,
-.container  .quiz-box h1{
+.app .quiz-box h4,
+.app .quiz-box h1{
   font-size:30px;
   font-weight: 400;
   color:#FFFFFF;
@@ -123,7 +47,7 @@ imgBox
   font-weight: bold;
 }
 
-.container  .quiz-box h1{
+.app .quiz-box h1{
   text-transform: uppercase;
   font-size: 70px;
   font-weight: bold;
@@ -158,7 +82,7 @@ imgBox
   }
 }
 
- .container  .score-card{
+ .app .score-card{
     flex-basis: 100%;
     max-width: 100%;
     padding:5px 10px;
@@ -170,7 +94,7 @@ imgBox
     justify-content: space-around;
   }
 /*CAMPO DA CAIXA COM  OS 4 BOTÕES, CONTENDO DENTRO AS 4 IMAGENS */
- .container  .option-box{
+ .app .option-box{
     min-height:500px;
     flex-basis: 100%;
     max-width: 100%;
@@ -181,12 +105,12 @@ imgBox
     align-content: flex-start;
 }
 /*CAMPO DAS 4 IMAGENS DENTRO DOS BOTÕES*/
-.container  .option-box img{
+.app .option-box img{
    width: 100%;
    display: block;
 }
 /*CAMPO DOS 4 BOTÕES COM AS 4 IMAGENS*/
-.container  .option-box button{
+.app .option-box button{
     flex-basis: calc(50% - 30px);
     max-width:  calc(50% - 30px);
     margin:10px; 
@@ -198,13 +122,13 @@ imgBox
     animation: button 1s ease;  
 }
 @media only screen and (max-width: 700px){
-  .container  .option-box{
+  .app .option-box{
     width:50%;
     margin: 6px 0;
   }
 }
 @media only screen and (max-width: 500px){
-  .container  .option-box{
+  .app .option-box{
     width:50%;
     margin: 6px 0;
   }
@@ -214,10 +138,10 @@ imgBox
   0%{transform: scale(0.5);opacity:0 }
   100%{transform: scale(1);opacity: 1}
 }
-.container  .option-box button {
+.app .option-box button {
   position: relative;
 }
-.container  .option-box button.errada span{
+.app .option-box button.errada span{
     position: absolute;
     left:0px;
     background-color: red;
@@ -236,7 +160,7 @@ imgBox
   100%{transform: translateY(0%);}
 }
 
-.container  .option-box button.errada img{
+.app .option-box button.errada img{
     animation: imgErrada 1s ease;
 }
 
@@ -252,7 +176,7 @@ imgBox
   }
 }
 
-.container  .option-box button.correta span{
+.app .option-box button.correta span{
     position: absolute;
     left:0px;
     background-color: #57E964;
@@ -271,7 +195,7 @@ imgBox
 }
 
 
-.container  .option-box button.correta img{
+.app .option-box button.correta img{
     animation: imgCorreta 1s ease;
 }
 
@@ -288,7 +212,7 @@ imgBox
   
 }
 
-.container  .option-box button.hide{
+.app .option-box button.hide{
   animation: buttonHide 1s ease forwards;
 
 }
@@ -301,14 +225,14 @@ imgBox
        transform: scale(0);
   }
 }
-.container  .option-box h1 span{
+.app .option-box h1 span{
      font-size: 20px;
      color: #FF9800;
      display: inline-block;
      padding: 10px 0px;
 
 }
-.container  .option-box h1{
+.app .option-box h1{
   font-size:30px;
   color:#ffffff;
   margin: 0px;
@@ -323,7 +247,7 @@ imgBox
   100%{
        transform: scale(1);opacity: 1
   }
-}*/
+}
 
 
  
