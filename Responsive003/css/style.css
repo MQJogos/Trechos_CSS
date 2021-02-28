@@ -2,12 +2,17 @@
 body{
       margin:0;
       padding:0;
+      box-sizing: border-box;/*Retirado Do Video*/
+      display: flex;/* Retirado Do Video*/
+      justify-content: center;/* Retirado Do Video*/
+      align-items: center; /* Retirado Do Video*/
+      min-height: 100vh; /* Retirado Do Video */
       background-image: url("background.png"); 
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      font-family: 'Montserrat', sans-serif;
+      font-family: 'Poppins', sans-serif;
 } 
   *{
      box-sizing: border-box; 
