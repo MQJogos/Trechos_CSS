@@ -18,10 +18,12 @@ body{
      box-sizing: border-box; 
 } 
 
-.app{
-   height: 600px;
-   width: 700px;
-   margin: 40px auto;
+.app {/*No video é container */
+   position: relative; /* Retirado Do Video */
+   display: flex; /* Retirado Do Video  */
+   height: 600px; /* No vídeo não tem height*/
+   width: 700px;/* No video é 1000px; */
+   margin: 40px auto; /* No Vídeo O Valo É 20px Sem o auto*/
    background-color: rgba(91, 128, 86, 0.5);
    padding: 10px 50px 50px 50px;
    border-radius: 50px;
