@@ -1,31 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap');
 body{
       margin:0;
       padding:0;
-      box-sizing: border-box;/*Retirado Do Video*/
-      display: flex;/* Retirado Do Video*/
-      justify-content: center;/* Retirado Do Video*/
-      align-items: center; /* Retirado Do Video*/
-      min-height: 100vh; /* Retirado Do Video */
       background-image: url("background.png"); 
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Montserrat', sans-serif;
 } 
   *{
      box-sizing: border-box; 
 } 
 
-.app {/*No video é container */
-   position: relative; /* Retirado Do Video */
-   display: flex; /* Retirado Do Video  */
-   height: 600px; /* No vídeo não tem height*/
-   width: 700px;/* No video é 1000px; */
-   margin: 40px auto; /* No Vídeo O Valo É 20px Sem o auto*/
+.app{
+   height: 600px;
+   width: 700px;
+   margin: 40px auto;
    background-color: rgba(91, 128, 86, 0.5);
-   padding: 10px 50px 50px 50px; /* No vídeo Está 20px 0; */
+   padding: 10px 50px 50px 50px;
    border-radius: 50px;
    border: 2px solid #82b5d1;
    box-shadow: 10px 15px 5px #82b5d1;
@@ -102,11 +95,6 @@ body{
   }
 /*CAMPO DA CAIXA COM  OS 4 BOTÕES, CONTENDO DENTRO AS 4 IMAGENS */
  .app .option-box{
-    position: relative; /* Retirado Do Video  */
-    height: 250px; /* Retirado Do Video */
-    width: 45%; /* Retirado Do Video */
-    margin: 30px 0; /* Retirado Do Video */
-    border-radius: 20px;
     min-height:500px;
     flex-basis: 100%;
     max-width: 100%;
@@ -219,7 +207,7 @@ body{
        transform: scale(0.8); 
   }
   100%{
-       transform: scale(1);
+       transform: scale(1); 
   }
   
 }
