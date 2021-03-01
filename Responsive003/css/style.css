@@ -111,8 +111,12 @@ body{
 }
 /*CAMPO DOS 4 BOTÕES COM AS 4 IMAGENS*/
 .app .option-box button{
-    flex-basis: calc(50% - 30px);
-    max-width:  calc(50% - 30px);
+    flex-basis: calc(100% - 20px); /* Retirado Do Video */
+    max-width:  calc(100% - 20px); /* Retirado Do Video */
+    z-index: 1; /* Retirado Do Video */
+    display: flex; /* Retirado Do Video */
+    justify-content: center; /* Retirado Do Video */
+    align-items: center; /* Retirado Do Video */
     margin:10px; 
     border:0;
     padding:0;
