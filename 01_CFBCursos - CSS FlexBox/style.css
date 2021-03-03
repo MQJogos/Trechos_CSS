@@ -7,9 +7,12 @@
     color:#fff;
 }
 .container{
-    max-width:500px;
+    /*A palavra "max" é importantíssima */max-width:500px;
     margim: 0 auto;
     border:1px solid #000;
+}
+.flexivel{
+    display: flex;
 }
 body{
    font-family:arial;
