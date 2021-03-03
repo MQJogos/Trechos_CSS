@@ -11,13 +11,6 @@
     margim: 0 auto;
     border:1px solid #000;
 }
-p{
-   text-align:center;
-   margin:25px 0 0 0;
-   font-size:1.5em;
-   font-weight:bold;
-   color:#777;
-}
 body{
    font-family:arial;
    color:#000;
