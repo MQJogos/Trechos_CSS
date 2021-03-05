@@ -25,7 +25,6 @@ body
   padding: 10px;
   box-sizing: border-box;
 }
-
 .container .box
 {
    position: relative;
@@ -46,9 +45,8 @@ body
 .container .box:nth-child(3)
 {
    background: linear-gradient(45deg, #036eb7, #64eaff);
-{
-.containenr .box:nth-child(4)
 }
+.containenr .box:nth-child(4)
 {
    background: linear-gradient(45deg, #036eb7, #64eaff);
 }
