@@ -59,6 +59,21 @@ body
   color: #fff;
   z-index: 1;
   opacity: 0.4;
-  
+}
+.container .box h3
+{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.container .box  h3
+{
+  margin:0;
+  padding:0;
+  color:#fff;
+  font-size: 24px;
+  text-transform: uppercase;
 }
 
